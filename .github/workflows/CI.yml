@@ -16,9 +16,4 @@ jobs:
       - name: build with maven
         run: mvn -s settings.xml -B package
         env:
-          GHPKG_TOKEN: ${{ secrets.GHPKG_TOKEN }}
-      - name: upload build artefact
-        uses: actions/upload-artifact@v2
-        with:
-          name: app.jar
-          path: target/mvn-server-app-1.0.jar
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
