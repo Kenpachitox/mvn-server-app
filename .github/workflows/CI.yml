@@ -16,7 +16,7 @@ jobs:
       - name: build with maven
         run: mvn -s settings.xml -B package
         env:
-          GHPKG_TOKEN: ${{ secrets.GIT_TOKEN }}
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
       - name: upload build artefact
         uses: actions/upload-artifact@v2
         with:
