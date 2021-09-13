@@ -7,7 +7,7 @@
     <servers>
         <server>
             <id>github</id>
-            <username>kenpachitox</username>
+            <username>Kenpachitox</username>
             <password>${env.GIT_TOKEN}</password>
         </server>
     </servers>
